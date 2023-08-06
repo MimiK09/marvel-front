@@ -70,7 +70,7 @@ const ComicsForCharacterId = () => {
 									/>
 								</div>
 								<div className="comics-card-content">
-									<p>{newElement.title}</p>
+									<h3>{newElement.title}</h3>
 									<p>{newElement.description}</p>
 								</div>
 							</div>

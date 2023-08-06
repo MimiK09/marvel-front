@@ -13,7 +13,7 @@ const Favorites = ({ isLogged, setIsLogged }) => {
 	const fetchData = async () => {
 		const cookie = Cookies.get("token");
 		try {
-			const response = await axios.get(`https://site--marvel-back--default-free-project--emel-l758.code.run/favorites`, {
+			const response = await axios.get(`https://site--marvel-back--d4x522rwzwfd.code.run/favorites`, {
 				headers: {
 					Authorization: `Bearer ${cookie}`,
 				},
@@ -31,7 +31,7 @@ const Favorites = ({ isLogged, setIsLogged }) => {
 		const responseArray = await Promise.all(
 			ids.map((id) =>
 				axios
-					.get(`https://site--marvel-back--default-free-project--emel-l758.code.run/${type}/${id}`)
+					.get(`https://site--marvel-back--d4x522rwzwfd.code.run/${type}/${id}`)
 					.then((response) => response.data)
 			)
 		);

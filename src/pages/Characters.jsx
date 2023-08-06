@@ -24,7 +24,7 @@ const Characters = ({ isLogged, setIsLogged }) => {
 	const fetchData = async () => {
 		try {
 			const response = await axios.get(
-				`https://site--marvel-back--default-free-project--emel-l758.code.run/characters?name=${searchKeyWord}&skip=${skip}&limit=${limit}`
+				`https://site--marvel-back--d4x522rwzwfd.code.run/characters?name=${searchKeyWord}&skip=${skip}&limit=${limit}`
 			);
 			setDataCharacters(response.data.results);
 			setIsLoading(false);
@@ -54,7 +54,7 @@ const Characters = ({ isLogged, setIsLogged }) => {
 		const cookie = Cookies.get("token");
 		console.log("cookie", cookie, "id", id);
 		const sentData = await axios.post(
-			"https://site--marvel-back--default-free-project--emel-l758.code.run/favorites/add",
+			"https://site--marvel-back--d4x522rwzwfd.code.run/favorites/add",
 			{ type: "character", id },
 			{
 				headers: {

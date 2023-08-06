@@ -1,0 +1,16 @@
+footer{
+    display:flex;
+    justify-content: center;
+    height:100px;
+	background-color: rgb(40, 40, 40);
+    align-items: center;
+}
+
+footer p {
+color:#ffffff;
+}
+
+footer span {
+    color:#ffffff;
+    font-weight: 800;;
+}

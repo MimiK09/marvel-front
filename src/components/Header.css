@@ -1,0 +1,129 @@
+header {
+	border-bottom: 1px solid black;
+	background-color: rgb(40, 40, 40);
+}
+
+header .little-screen {
+	display: none;
+}
+
+header .mobile-menu {
+	display: none;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 120px;
+}
+
+.header-logo {
+	width: 150px;
+	overflow: hidden;
+	transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+	transform: scale(1.05);
+}
+
+.header-logo img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+header .container > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+header .container > div p {
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.4rem;
+	color: #ffffff;
+	transition: transform 0.3s ease;
+}
+
+header .container > div p:hover {
+	background-color: rgb(218, 52, 52);
+}
+
+header p:hover {
+	position: relative;
+	transform: scale(1.05);
+}
+
+header p:hover::after {
+	content: "⚡️";
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	color: yellow;
+}
+
+@media (max-width: 950px) {
+	header .large-screen {
+		display: none;
+	}
+	header .little-screen {
+		display: flex;
+		height: 50px;
+		background-color: rgb(40, 40, 40);
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 20px;
+	}
+
+	.header-logo {
+		width: 100px;
+		overflow: hidden;
+		transition: transform 0.3s ease;
+	}
+
+	header .menu-burger {
+		color: white;
+		font-size: 2rem;
+	}
+
+	header .mobile-menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		background-color: rgb(40, 40, 40);
+		gap: 5px;
+		padding: 10px 0px;
+	}
+
+	header .mobile-menu p {
+		border: 2px solid #ffffff;
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 1.4rem;
+		color: #ffffff;
+		transition: transform 0.3s ease;
+	}
+
+	header .mobile-menu p:hover {
+		background-color: rgb(218, 52, 52);
+		position: relative;
+		transform: scale(1.05);
+	}
+
+	header .mobile-menu p:hover::after {
+		content: "";
+		position: absolute;
+		bottom: -30px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 20px;
+		color: yellow;
+	}
+}

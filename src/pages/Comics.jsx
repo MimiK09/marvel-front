@@ -22,7 +22,7 @@ const Comics = ({ isLogged, setIsLogged }) => {
 	const fetchData = async () => {
 		try {
 			const response = await axios.get(
-				`https://site--marvel-back--default-free-project--emel-l758.code.run:8080/comics?title=${searchKeyWord}`
+				`https://site--marvel-back--default-free-project--emel-l758.code.run/comics?title=${searchKeyWord}`
 			);
 			setDataComics(response.data.results);
 			setIsLoading(false);
@@ -41,7 +41,7 @@ const Comics = ({ isLogged, setIsLogged }) => {
 
 		console.log("cookie", cookie, "id", id);
 		const sentData = await axios.post(
-			"https://site--marvel-back--default-free-project--emel-l758.code.run:8080/favorites/add",
+			"https://site--marvel-back--default-free-project--emel-l758.code.run/favorites/add",
 			{ type: "comic", id },
 			{
 				headers: {

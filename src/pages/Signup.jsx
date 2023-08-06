@@ -18,7 +18,7 @@ const Signup = ({ isLogged, setIsLogged }) => {
 			setErrorSubmit("");
 
 			try {
-				const sentData = await axios.post("https://site--marvel-back--default-free-project--emel-l758.code.run:8080/signup", {
+				const sentData = await axios.post("https://site--marvel-back--default-free-project--emel-l758.code.run/signup", {
 					username,
 					email,
 					password,

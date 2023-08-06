@@ -15,7 +15,7 @@ const ComicsForCharacterId = () => {
 	const fetchData = async () => {
 		try {
 			const response = await axios.get(
-				`http://localhost:3000/comics/${characterId}`
+				`https://site--marvel-back--default-free-project--emel-l758.code.run:8080/comics/${characterId}`
 			);
 
 			setDataComicsForCharacter(response.data);

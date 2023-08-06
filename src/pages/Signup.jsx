@@ -18,7 +18,7 @@ const Signup = ({ isLogged, setIsLogged }) => {
 			setErrorSubmit("");
 
 			try {
-				const sentData = await axios.post("http://localhost:3000/signup", {
+				const sentData = await axios.post("https://site--marvel-back--default-free-project--emel-l758.code.run:8080/signup", {
 					username,
 					email,
 					password,

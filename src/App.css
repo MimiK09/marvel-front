@@ -16,15 +16,18 @@ p {
 h1 {
 	font-size: 2.1rem;
 	margin: 10px;
+	font-weight: 600;
 }
 
 h2 {
 	font-size: 1.8rem;
 	margin: 10px;
+	font-weight: 600;
 }
 
 h3 {
 	font-size: 1.4rem;
+	font-weight: 600;
 }
 
 main {
@@ -130,14 +133,14 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap:10px;
+	gap: 10px;
 }
 
 .log-pages form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap:10px;
+	gap: 10px;
 }
 
 .log-pages h2 {
@@ -149,7 +152,7 @@ main {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	font-size: 16px;
-	padding : 10px;
+	padding: 10px;
 }
 
 .log-pages button {
@@ -173,8 +176,8 @@ main {
 	color: rgb(218, 52, 52);
 	margin-top: 30px;
 }
-.log-pages .error-message  button {
-width:30px;
+.log-pages .error-message button {
+	width: 30px;
 }
 
 /* Lien vers l'autre page */

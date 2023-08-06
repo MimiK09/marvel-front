@@ -113,7 +113,7 @@ const Comics = ({ isLogged, setIsLogged }) => {
 								</Link>
 							)}
 							<div className="comics-card-content">
-								<p>{element.title}</p>
+								<h3>{element.title}</h3>
 								<p>{element.description}</p>
 							</div>
 						</div>

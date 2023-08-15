@@ -19,7 +19,7 @@ const Home = (props) => {
 			<section>
 				<div class="block">
 					<p>
-						<span class="first-character sc">D</span>Depuis sa création en 1939,
+						<span class="first-character sc">D</span>epuis sa création en 1939,
 						l'Univers Marvel a captivé l'imagination de millions de fans à
 						travers le monde. Tout a commencé avec la première apparition de la
 						Torche Humaine et Namor le Prince des Mers, créant ainsi le socle
@@ -68,7 +68,7 @@ const Home = (props) => {
 			<section>
 				<div class="block">
 					<p>
-						<span class="first-character atw">L</span>L'Univers Marvel a
+						<span class="first-character atw">L</span>'Univers Marvel a
 						également conquis le grand écran grâce à l'Univers Cinématographique
 						Marvel (UCM). Depuis le lancement de "Iron Man" en 2008, l'UCM a
 						pris une ampleur phénoménale, avec des films interconnectés et des
